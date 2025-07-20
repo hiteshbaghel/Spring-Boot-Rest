@@ -1,5 +1,6 @@
 package com.hitesh.Spring_Boot_Rest.model;
 
+import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

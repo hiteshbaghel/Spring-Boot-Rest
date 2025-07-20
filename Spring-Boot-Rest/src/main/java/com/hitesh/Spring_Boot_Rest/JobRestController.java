@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.awt.color.ICC_ColorSpace;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -42,5 +44,11 @@ public class JobRestController {
     {
         service.deleteJob(postId);
         return "Deleted";
+    }
+
+    @GetMapping("load")
+    public String load(){
+        service.load();
+        return "Success";
     }
 }
