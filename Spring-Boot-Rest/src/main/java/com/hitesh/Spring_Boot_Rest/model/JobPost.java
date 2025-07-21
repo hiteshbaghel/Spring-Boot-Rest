@@ -1,19 +1,27 @@
 package com.hitesh.Spring_Boot_Rest.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.PersistenceContext;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import java.util.List;
 //@Component
 @Data
 @NoArgsConstructor
+@Entity
 //@AllArgsConstructor
 public class JobPost {
+    @Id
     private int postId;
     private String postProfile;
     private String postDesc;
     private int reqExperience;
+    //@Column(name="postTechStack", columnDefinition="TEXT")
     private List<String> postTechStack;
 
 
