@@ -23,6 +23,7 @@ public class JobService {
     }
 
     public JobPost getJob(int postId) {
+       // int x = 10/0 ;   // FOr AOP concept After Throwing
         return repo.findById(postId).orElse(new JobPost());  //return repo.getJob(postId);
     }
 
