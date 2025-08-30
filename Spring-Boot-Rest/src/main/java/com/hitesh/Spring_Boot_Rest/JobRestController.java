@@ -45,6 +45,10 @@ public class JobRestController {
         service.deleteJob(postId);
         return "Deleted";
     }
+@GetMapping("jobPosts/keyword/{keyword}")
+    public List<JobPost> searchByKeyword(@PathVariable("keyword") String Keyword){
+        return service.search(Keyword);
+    }
 
     @GetMapping("load")
     public String load(){
