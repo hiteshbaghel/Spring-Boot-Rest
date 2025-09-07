@@ -3,12 +3,12 @@ package com.hitesh.Spring_Boot_Rest;
 import com.hitesh.Spring_Boot_Rest.model.JobPost;
 import com.hitesh.Spring_Boot_Rest.service.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+//import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.color.ICC_ColorSpace;
-import java.util.ArrayList;
-import java.util.Arrays;
+//import java.awt.color.ICC_ColorSpace;
+//import java.util.ArrayList;
+//import java.util.Arrays;
 import java.util.List;
 
 @RestController
